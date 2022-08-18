@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: montserrat, sans-serif;
+  }
+  
+  input, button{
+    
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+  
+  }
+  .App{
+    height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: #b0b0b0;
+  }
+  form{
+    display: block;
+    position: relative;
+  }
+  form:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    right:-5px;
+    bottom:-5px;
+    left:-5px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #000428 , #004e92 );
+
+  }
+  form .form-inner{
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding: 50px;
+    z-index: 2;
+  }
+
+  form .form-inner h2{
+    color: rgb(5, 3, 3);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  form .form-inner .form-group{
+    display: block;
+
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+
+  form .form-inner .form-group label{
+     display: block;
+     color: #666;
+     font-size: 35px;
+     margin-bottom: 10px;
+     transition: 0.4s;
+
+  }
+  .form-inner .form-group:focus-within label{
+    color: #226f92;
+  }
+  form .form-group .form-inner input{
+
+    display: block;
+    width: 45px;
+    padding: 30px 45px;
+    background-color: rgb(102, 147, 233);
+    border-radius: 25px;
+    transition: 0.4s;
+  }
+  form .form-group .form-inner input:focus{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  form .form-inner input[type='submit']{
+    display: inline-block;
+    size: 33px;
+    padding:  15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #bec2e4 , #004e92);
+  }
+  input{
+    size: 45px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 48px;
+    background-color: #9dc7ec;
+    margin-bottom: 15px;
+
+  }
+  .error{
+    color: rgba(240, 41, 6, 0.665);
+    padding: 5px;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+
+  }
+  
+  
